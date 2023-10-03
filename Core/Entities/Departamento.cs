@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 
 namespace Core.Entities;
-public class Departamento
+public class Departamento : BaseEntity
 {
     public string NombreDep { get; set; }
 
