@@ -6,5 +6,10 @@ using System.Threading.Tasks;
 namespace Core.Entities;
 public class Departamento
 {
-    public string NombreDepartamento { get; set; }
+    public string NombreDep { get; set; }
+
+    public int IdPais { get; set; }
+
+    public Pais Paises { get; set; }
+    public ICollection<Ciudad> Ciudades { get; set; }
 }
