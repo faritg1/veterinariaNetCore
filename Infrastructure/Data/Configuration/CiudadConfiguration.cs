@@ -10,7 +10,7 @@ namespace Infrastructure.Data.Configuration
         {
             // Aquí puedes configurar las propiedades de la entidad Marca
             // utilizando el objeto 'builder'.
-            builder.ToTable("Ciudad");
+            builder.ToTable("ciudad");
 
             builder.HasKey(e => e.Id);
             builder.Property(e => e.Id);

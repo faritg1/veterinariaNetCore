@@ -25,6 +25,5 @@ public class ClienteDireccion : BaseEntity
     
     [Required]
     public int IdCiudad { get; set; }
-
     public Ciudad Ciudades { get; set; }
 }

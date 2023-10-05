@@ -13,6 +13,7 @@ public class AnimalsContext : DbContext
     {
     }
 
+    public DbSet<Ciudad> Ciudades { get; set; }
     public DbSet<Cliente> Clientes { get; set; }
     public DbSet<Pais> Paises { get; set; }
     public DbSet<Departamento> Departamentos { get; set; }

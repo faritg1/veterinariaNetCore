@@ -11,5 +11,5 @@ public class Ciudad : BaseEntity
 
     public int IdDep { get; set; }
     public Departamento Departamentos { get; set; }
-    public ICollection<Cliente> Clientes { get; set; }
+    public ClienteDireccion ClientesDirecciones { get; set; }
 }
