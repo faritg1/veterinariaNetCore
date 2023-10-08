@@ -5,9 +5,8 @@ using System.Threading.Tasks;
 
 namespace Core.Interfaces
 {
-    public interface IUnitOfWork
+    public interface ICiudadRepository
     {
-        IPaisRepository Paises {get;}
-        Task<int> SaveAsync();
+        
     }
 }
