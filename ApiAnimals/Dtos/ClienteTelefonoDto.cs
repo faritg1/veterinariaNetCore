@@ -9,5 +9,7 @@ namespace ApiAnimals.Dtos
     {
         public int Id { get; set; }
         public string Numero { get; set; }
+        public int IdCliente { get; set; }
+
     }
 }

@@ -20,5 +20,7 @@ namespace ApiAnimals.Dtos
         public string CardinalSec { get; set; }
         public string Complemento { get; set; }
         public string CodigoPostal { get; set; }
+        public int IdCiudad { get; set; }
+        public int IdCliente { get; set; }
     }
 }

@@ -11,5 +11,7 @@ namespace ApiAnimals.Dtos
         public string Nombre { get; set; }
         public string Especie { get; set; }
         public DateTime FechaNacimiento { get; set; }
+        public int IdRaza { get; set; }
+        public int IdCliente { get; set; }
     }
 }
