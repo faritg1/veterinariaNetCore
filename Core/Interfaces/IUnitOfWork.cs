@@ -8,7 +8,15 @@ namespace Core.Interfaces
     public interface IUnitOfWork
     {
         IPaisRepository Paises {get;}
-        ICiudadRepository Ciudadaes {get;}
+        ICiudadRepository Ciudades {get;}
+        ICitaRepository Citas {get;}
+        IClienteDireccionRepository ClientesDirecciones {get;}
+        IClienteRepository Clientes {get;}
+        IClienteTelefonoRepository ClientesTelefonos {get;}
+        IDepartamentoRepository Departamentos {get;}
+        IMascotaRepository Mascotas {get;}
+        IRazaRepository Razas {get;}
+        IServicioRepository Servicios {get;}
         Task<int> SaveAsync();
     }
 }
