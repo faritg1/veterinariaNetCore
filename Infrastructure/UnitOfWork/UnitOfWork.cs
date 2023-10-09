@@ -12,6 +12,7 @@ public class UnitOfWork : IUnitOfWork, IDisposable
     private readonly AnimalsContext _context;
 
     private PaisRepository _paises;
+    private CiudadRepository _ciudades;
 
     public UnitOfWork(AnimalsContext context)
     {
@@ -25,7 +26,15 @@ public class UnitOfWork : IUnitOfWork, IDisposable
             }
             return _paises;
         }
+    }
 
+    public ICiudadRepository Ciudades{
+        get{
+            if(_ciudades == null){
+                _ciudades = new CiudadRepository(_context);
+            }
+            return _ciudades;
+        }
     }
 
     public void Dispose()

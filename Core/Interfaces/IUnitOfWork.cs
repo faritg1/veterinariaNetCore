@@ -8,6 +8,7 @@ namespace Core.Interfaces
     public interface IUnitOfWork
     {
         IPaisRepository Paises {get;}
+        ICiudadRepository Ciudadaes {get;}
         Task<int> SaveAsync();
     }
 }
