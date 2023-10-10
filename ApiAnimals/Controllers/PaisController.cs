@@ -48,7 +48,7 @@ public class PaisController : BaseControlleerApi
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     public async Task<ActionResult<PaisDto>> Post(PaisDto paisDto){
         var pais = _mapper.Map<Pais>(paisDto);
-        this._unitOfWork.Paises.Add(pais);
+        _unitOfWork.Paises.Add(pais);
         await _unitOfWork.SaveAsync();
 
         if(pais == null){
