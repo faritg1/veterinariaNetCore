@@ -34,7 +34,6 @@ public class PaisController : BaseControlleerApi
     [ProducesResponseType(StatusCodes.Status200OK)]
     [ProducesResponseType(StatusCodes.Status400BadRequest)]
     [ProducesResponseType(StatusCodes.Status404NotFound)]
-
     public async Task<ActionResult<PaisDto>> Get(int id){
         var pais = await _unitOfWork.Paises.GetByIdAsync(id);
         if (pais == null){
@@ -50,7 +49,6 @@ public class PaisController : BaseControlleerApi
         var pais = _mapper.Map<Pais>(paisDto);
         _unitOfWork.Paises.Add(pais);
         await _unitOfWork.SaveAsync();
-
         if(pais == null){
             return BadRequest();
         }

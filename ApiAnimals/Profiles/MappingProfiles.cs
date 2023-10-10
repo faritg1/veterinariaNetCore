@@ -14,6 +14,9 @@ namespace ApiAnimals.Profiles
             CreateMap<Pais,PaisDto>().ReverseMap();
             CreateMap<Departamento,DepartamentoDto>().ReverseMap();
             CreateMap<Ciudad,CiudadDto>().ReverseMap();
+            CreateMap<Cliente,ClienteDto>().ReverseMap();
+            CreateMap<Raza,RazaDto>().ReverseMap();
+            CreateMap<Mascota,MascotaDto>().ReverseMap();
         }
     }
 }
